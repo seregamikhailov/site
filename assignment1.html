@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1: Аквариум | Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assignment1.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">WebDev</span>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="assignment1.html" class="active">Задание 1</a></li>
+                        <li><a href="assignment2.html">Задание 2</a></li>
+                        <li><a href="index.html#about">О проекте</a></li>
+                        <li><a href="index.html#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="assignment-page">
+            <div class="container">
+                <div class="assignment-content">
+                    <h2>Задание 1: Аквариум</h2>
+                    <p>Это задание демонстрирует создание графической композиции "Аквариум" исключительно средствами CSS. В работе используются различные техники CSS для создания сложных фигур: рыбы, водоросли, песок на дне аквариума.</p>
+                    
+                    <p>Все элементы созданы с помощью CSS свойств: градиенты, border-radius, clip-path, псевдоэлементы ::before и ::after. Это задание показывает, насколько мощным инструментом является CSS для создания графики без использования изображений или JavaScript.</p>
+                    
+                    <p>В композиции представлены три рыбы разных размеров и цветов, водоросли с интересной формой, созданной с помощью clip-path, и дно аквариума с песком, на котором размещены декоративные элементы. Каждый элемент тщательно проработан и использует современные возможности CSS.</p>
+
+                    <p>Для создания рыбок использованы градиенты, которые создают объем и реалистичность. Хвосты рыб созданы с помощью clip-path, что позволяет создавать сложные формы. Глаза рыб - это простые круги, а узоры на телах созданы с помощью псевдоэлементов и border-radius.</p>
+                </div>
+
+                <div class="assignment-wrapper">
+                    <div class="sidebar">
+                        <button class="toggle-btn" onclick="togglePic()">Показать/Скрыть аквариум</button>
+                    </div>
+
+                    <div class="pic" id="aquarium">
+                        <div class="fish2">
+                            <div class="body"></div>
+                            <div class="tail"></div>
+                            <div class="eye"></div>
+                            <div class="circle-pattern" style="top: 3%"></div>
+                            <div class="circle-pattern" style="top: 34%"></div>
+                            <div class="circle-pattern" style="top: 64%"></div>
+                            <div class="circle-pattern circle-big"></div>
+                        </div>
+
+                        <div class="grass1">
+                            <div class="green"></div>
+                            <div class="white"></div>
+                        </div>
+                        <div class="grass3">
+                            <div class="green"></div>
+                            <div class="white"></div>
+                        </div>
+                        <div class="grass2">
+                            <div class="green"></div>
+                            <div class="white"></div>
+                        </div>
+                        <div class="fish1">
+                            <div class="body"></div>
+                            <div class="tail"></div>
+                            <div class="eye"></div>
+                            <div class="circle-pattern" style="top: 3%; border-color: hsl(323, 100%, 50%)"></div>
+                            <div class="circle-pattern" style="top: 34%; border-color: hsl(323, 100%, 50%)"></div>
+                            <div class="circle-pattern" style="top: 64%; border-color: hsl(323, 100%, 50%)"></div>
+                            <div class="circle-pattern circle-big" style="border-color: hsl(323, 100%, 50%)"></div>
+                        </div>
+
+                        <div class="fish3">
+                            <div class="body"></div>
+                            <div class="tail"></div>
+                            <div class="eye"></div>
+                            <div class="circle-pattern" style="top: 4%"></div>
+                            <div class="circle-pattern" style="top: 35%"></div>
+                            <div class="circle-pattern" style="top: 65%"></div>
+                            <div class="circle-pattern circle-big"></div>
+                        </div>
+
+                        <div class="sand">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="assignment-content">
+                    <h3>Технические детали</h3>
+                    <p>Для создания композиции использованы следующие CSS техники:</p>
+                    <ul style="list-style: disc; padding-left: 30px; margin: 20px 0; color: var(--text-light);">
+                        <li><strong>linear-gradient</strong> - для создания градиентных фонов и объемных эффектов</li>
+                        <li><strong>radial-gradient</strong> - для создания круглых градиентов</li>
+                        <li><strong>border-radius</strong> - для скругления углов и создания круглых форм</li>
+                        <li><strong>clip-path</strong> - для создания сложных форм (хвосты рыб, водоросли)</li>
+                        <li><strong>::before и ::after</strong> - псевдоэлементы для добавления дополнительных деталей</li>
+                        <li><strong>transform</strong> - для поворота, масштабирования и позиционирования элементов</li>
+                        <li><strong>position: absolute</strong> - для точного позиционирования элементов</li>
+                    </ul>
+                    
+                    <p>Аквариум создан с помощью кнопки "Показать/Скрыть", которая использует JavaScript для переключения класса. Это демонстрирует взаимодействие CSS и JavaScript для создания интерактивных элементов.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Михайлов Сергей</p>
+                    <p>Группа: 5130903.2</p>
+                    <p>Email: example@university.edu</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="assignment1.html">Задание 1</a></li>
+                        <li><a href="assignment2.html">Задание 2</a></li>
+                        <li><a href="index.html#about">О проекте</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Информация</h3>
+                    <p>Учебный проект по веб-разработке</p>
+                    <p>&copy; 2025 Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function togglePic() {
+            const aquarium = document.getElementById('aquarium');
+            aquarium.classList.toggle('show');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

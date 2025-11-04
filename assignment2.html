@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2: Интерактивная анимация | Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assignment2.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">WebDev</span>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="assignment1.html">Задание 1</a></li>
+                        <li><a href="assignment2.html" class="active">Задание 2</a></li>
+                        <li><a href="index.html#about">О проекте</a></li>
+                        <li><a href="index.html#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="assignment-page">
+            <div class="container">
+                <div class="assignment-content">
+                    <h2>Задание 2: Интерактивная анимация</h2>
+                    <p>Это задание демонстрирует создание интерактивной анимированной сцены с использованием CSS анимаций и переходов. При наведении курсора на сцену появляются облака, которые начинают плавно двигаться. При клике на сцену лиса убегает, а сцена трясется.</p>
+                    
+                    <p>Данное задание показывает возможности CSS для создания интерактивных элементов без использования JavaScript. Все анимации реализованы с помощью CSS transitions и keyframes, что обеспечивает плавность и производительность анимаций.</p>
+                    
+                    <p>В работе использованы различные техники CSS: позиционирование элементов, z-index для управления слоями, transform для анимаций, opacity для плавных переходов, и многое другое. Это демонстрирует, насколько мощным инструментом является CSS для создания визуальных эффектов.</p>
+
+                    <p>Сцена состоит из нескольких элементов: фоновое изображение, облака, которые появляются при наведении, лиса, которая исчезает при клике, и дерево, которое реагирует на наведение. Каждый элемент имеет свою анимацию и поведение, что создает интерактивный и живой интерфейс.</p>
+                </div>
+
+                <div class="assignment-wrapper">
+                    <div class="scene">
+                        <div class="background"></div>
+                        <div class="cloud cloud1"></div>
+                        <div class="cloud cloud2"></div>
+                        <div class="fox"></div>
+                        <div class="fox-run"></div>
+                        <div class="tree"></div>
+                        <div class="label label-hover">Пора отдыхать</div>
+                        <div class="label label-active">Отдохнули(</div>
+                    </div>
+                </div>
+
+                <div class="assignment-content">
+                    <h3>Технические детали</h3>
+                    <p>Для реализации анимации использованы следующие CSS свойства:</p>
+                    <ul style="list-style: disc; padding-left: 30px; margin: 20px 0; color: var(--text-light);">
+                        <li><strong>@keyframes</strong> - для определения анимационных последовательностей</li>
+                        <li><strong>transition</strong> - для плавных переходов между состояниями</li>
+                        <li><strong>transform</strong> - для перемещения, масштабирования и вращения элементов</li>
+                        <li><strong>opacity</strong> - для плавного появления и исчезновения элементов</li>
+                        <li><strong>z-index</strong> - для управления порядком наложения элементов</li>
+                        <li><strong>:hover</strong> и <strong>:active</strong> - псевдоклассы для интерактивности</li>
+                    </ul>
+                    
+                    <p>Все изображения используются в качестве фоновых изображений через свойство background-image. Это позволяет легко управлять размещением и масштабированием элементов. Анимации оптимизированы для производительности и используют GPU-ускорение через transform и opacity.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Михайлов Сергей</p>
+                    <p>Группа: 5130903.2</p>
+                    <p>Email: example@university.edu</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="assignment1.html">Задание 1</a></li>
+                        <li><a href="assignment2.html">Задание 2</a></li>
+                        <li><a href="index.html#about">О проекте</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Информация</h3>
+                    <p>Учебный проект по веб-разработке</p>
+                    <p>&copy; 2025 Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
