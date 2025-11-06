@@ -246,19 +246,19 @@ body {
 }
 
 .image-1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: url('irradie-patternsoup9.jpg');
 }
 
 .image-2 {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background-image: url('29550976-6525a1e04dd54.jpg');
 }
 
 .image-3 {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background-image: url('Channel-Improvisation.png');
 }
 
 .image-4 {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    background-image: url('i.jpeg');
 }
 
 .image-caption {

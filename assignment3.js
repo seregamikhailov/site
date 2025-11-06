@@ -404,3 +404,4 @@ function showCorrectAnswerForReview(questionBlock, question) {
 // Инициализация при загрузке страницы
 document.addEventListener('DOMContentLoaded', initQuiz);
 
+
