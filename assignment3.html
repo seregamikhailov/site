@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3: Викторина | Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assignment3.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">WebDev</span>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="assignment1.html">Задание 1</a></li>
+                        <li><a href="assignment2.html">Задание 2</a></li>
+                        <li><a href="assignment3.html" class="active">Задание 3</a></li>
+                        <li><a href="index.html#about">О проекте</a></li>
+                        <li><a href="index.html#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="assignment-page">
+            <div class="container">
+                <div class="assignment-content">
+                    <h2>Задание 3: Викторина по орфографии русского языка</h2>
+                    <p>Это задание демонстрирует создание интерактивной викторины с использованием JavaScript. Викторина содержит вопросы по орфографии русского языка с несколькими вариантами ответов. После выбора ответа пользователь получает обратную связь о правильности своего ответа.</p>
+                    
+                    <p>В викторине реализована система случайного перемешивания вопросов и ответов при каждом запуске, что делает прохождение более интересным. После ответа на вопрос показывается анимация, которая визуально демонстрирует правильность или неправильность выбора.</p>
+                    
+                    <p>После завершения викторины пользователь может просмотреть статистику правильных ответов и пройти викторину заново. Все вопросы можно просмотреть повторно, кликнув на них, чтобы увидеть правильные ответы и пояснения.</p>
+
+                    <p>Это задание демонстрирует работу с DOM-элементами, обработку событий, создание динамического контента, анимации и управление состоянием приложения с помощью JavaScript. Также используются современные CSS-техники для создания красивых переходов и анимаций.</p>
+                </div>
+
+                <div class="assignment-wrapper">
+                    <div class="quiz-container">
+                        <h1>Викторина по орфографии русского языка</h1>
+                        
+                        <div id="questions-area"></div>
+                        
+                        <div id="end-message" class="end-message hidden">Вопросы закончились</div>
+                        
+                        <div id="statistics" class="statistics hidden">
+                            <h2>Статистика</h2>
+                            <p>Правильных ответов: <span id="correct-count">0</span> из <span id="total-count">0</span></p>
+                            <button id="restart-btn" class="restart-btn hidden">Начать заново</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="assignment-content">
+                    <h3>Технические детали</h3>
+                    <p>Для реализации викторины использованы следующие технологии:</p>
+                    <ul style="list-style: disc; padding-left: 30px; margin: 20px 0; color: var(--text-light);">
+                        <li><strong>JavaScript</strong> - для логики викторины, обработки ответов и управления состоянием</li>
+                        <li><strong>DOM API</strong> - для динамического создания и изменения элементов страницы</li>
+                        <li><strong>Event Listeners</strong> - для обработки кликов и взаимодействия пользователя</li>
+                        <li><strong>CSS Animations</strong> - для плавных переходов и визуальных эффектов</li>
+                        <li><strong>CSS Transitions</strong> - для анимации изменения свойств элементов</li>
+                        <li><strong>Flexbox</strong> - для адаптивной верстки и расположения элементов</li>
+                        <li><strong>Array Methods</strong> - для работы с данными (map, forEach, find, sort)</li>
+                    </ul>
+                    
+                    <p>Викторина использует алгоритм Fisher-Yates для перемешивания вопросов и ответов, что обеспечивает случайный порядок при каждом запуске. Все вопросы хранятся в массиве объектов, что позволяет легко добавлять новые вопросы или изменять существующие.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Михайлов Сергей</p>
+                    <p>Группа: 5130903.2</p>
+                    <p>Email: example@university.edu</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="assignment1.html">Задание 1</a></li>
+                        <li><a href="assignment2.html">Задание 2</a></li>
+                        <li><a href="assignment3.html">Задание 3</a></li>
+                        <li><a href="index.html#about">О проекте</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Информация</h3>
+                    <p>Учебный проект по веб-разработке</p>
+                    <p>&copy; 2025 Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assignment3.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
